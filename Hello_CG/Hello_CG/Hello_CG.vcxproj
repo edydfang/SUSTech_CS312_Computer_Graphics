@@ -71,11 +71,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>.\Includes;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Edward_FANG\OneDrive\Cpp\Release;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\fangy\source\repos\SUSTech_CS312_Computer_Graphics\Hello_CG\Hello_CG\Libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>.\Includes;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Edward_FANG\OneDrive\Cpp\Release;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\fangy\source\repos\SUSTech_CS312_Computer_Graphics\Hello_CG\Hello_CG\Libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\fangy\source\repos\SUSTech_CS312_Computer_Graphics\Hello_CG\Hello_CG\Includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\fangy\source\repos\SUSTech_CS312_Computer_Graphics\Hello_CG\Hello_CG\Libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>C:\Users\fangy\source\repos\SUSTech_CS312_Computer_Graphics\Hello_CG\Hello_CG\Libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\fangy\source\repos\SUSTech_CS312_Computer_Graphics\Hello_CG\Hello_CG\Includes;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -96,6 +104,10 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -125,6 +137,8 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
