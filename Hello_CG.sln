@@ -9,8 +9,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rectangle", "Rectangle\Rect
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Colorful_Cube", "Colorful_Cube\Colorful_Cube.vcxproj", "{CF10F06C-A6BD-43ED-9232-2455038C0F6B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLM_Demo", "GLM_Demo\GLM_Demo.vcxproj", "{42960D8D-73A9-4F2D-AC49-EA41898ABFDD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -43,14 +41,6 @@ Global
 		{CF10F06C-A6BD-43ED-9232-2455038C0F6B}.Release|x64.Build.0 = Release|x64
 		{CF10F06C-A6BD-43ED-9232-2455038C0F6B}.Release|x86.ActiveCfg = Release|Win32
 		{CF10F06C-A6BD-43ED-9232-2455038C0F6B}.Release|x86.Build.0 = Release|Win32
-		{42960D8D-73A9-4F2D-AC49-EA41898ABFDD}.Debug|x64.ActiveCfg = Debug|x64
-		{42960D8D-73A9-4F2D-AC49-EA41898ABFDD}.Debug|x64.Build.0 = Debug|x64
-		{42960D8D-73A9-4F2D-AC49-EA41898ABFDD}.Debug|x86.ActiveCfg = Debug|Win32
-		{42960D8D-73A9-4F2D-AC49-EA41898ABFDD}.Debug|x86.Build.0 = Debug|Win32
-		{42960D8D-73A9-4F2D-AC49-EA41898ABFDD}.Release|x64.ActiveCfg = Release|x64
-		{42960D8D-73A9-4F2D-AC49-EA41898ABFDD}.Release|x64.Build.0 = Release|x64
-		{42960D8D-73A9-4F2D-AC49-EA41898ABFDD}.Release|x86.ActiveCfg = Release|Win32
-		{42960D8D-73A9-4F2D-AC49-EA41898ABFDD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
