@@ -9,9 +9,9 @@ int main() {
 	trans = glm::translate(trans, glm::vec3(1.0f, 1.0f, 0.0f));
 	vec = trans * vec;
 	std::cout << vec.x << ", " << vec.y << ", " << vec.z << std::endl;
-
-	trans = glm::rotate(trans, glm::radians(90.0f),
-	glm::vec3(0.0, 0.0, 1.0));
+	trans = glm::rotate(trans, glm::radians(90.0f), glm::vec3(0.0, 0.0, 1.0));
+	vec = trans * vec;
+	std::cout << vec.x << ", " << vec.y << ", " << vec.z << std::endl;
 	trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));
 	vec = trans * vec;
 	std::cout << vec.x << ", " << vec.y << ", " << vec.z << std::endl;
